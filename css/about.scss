@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+@use 'header';
+@use 'footer';
+
+/* ABOUT */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', 
+  'Noto Sans JP', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  background: #fff;
+  color: #333;
+  font-weight: bold;
+}
+
+img  {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+
+.site-title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
+}
+.site_text {
+  line-height: 2;
+  margin-bottom: 30px;
+}
+/* topconsept */
+.cover-topconsept {
+  height: 100vh;
+}
+.cover-topconsept::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background: #222;
+  z-index: -1;
+}
+.topconsept-wrapper {
+  background-image: url('../img/heading-img.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 76.4%;
+  height: 86.5%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.top-title {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  transform: translate(50%, -50%);
+  color: #fff;
+}
+.top-title1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+.top-title2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sec-title {
+  font-size: 7.2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.sub-title {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+}
+
+
+/* vision */
+.vision-wapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 197px 0 264px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  position: relative;
+  z-index: 10;
+}
+
+/* ceo */
+.ceo-wapper {
+  max-width: 1100px;
+  margin: 0 auto 120px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  .ceo-img {
+    width: 420px;
+    height: 282px;
+    position: absolute;
+    top: -164px;
+    left: 0;
+    z-index: 20;
+  }
+  .ceo-content {
+    max-width: 770px;
+    background: #F0F0F0;
+    z-index: 10;
+    padding: 120px 185px 60px;
+  }
+}
+
+/* company */
+.company-wapper {
+  max-width: 1100px;
+  margin: 120px auto;
+  padding: 0 4vw;
+  position: relative;
+  z-index: 10;
+  .site-title {
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+  }
+  .company-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 73%;
+    margin: 0 0 40px auto;
+
+    dt {
+      width: 20%;
+      padding: 20px 0;
+      border-bottom: 1px solid #DDDDDD;
+    }
+    dd {
+      width: 80%;
+      padding: 20px 0;
+      border-bottom: 1px solid #DDDDDD;
+      font-weight: normal;
+    }
+
+  }
+}
+.map {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+iframe {
+  max-width: 1100px;
+  width: 100%;
+}
+
+
+/* SP版 */
+@media screen and (max-width:768px) {
+  body {
+    font-size: 1.4rem;
+  }
+    /* topconsept */
+  .top-title {
+    top: 50%;
+    right: 0;
+    transform: translate(30%, -50%);
+  }
+  .top-title1 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+  .top-title2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  .sec-title {
+    font-size: 5.6rem;
+  }
+  /* ceo */
+  .ceo-wapper {
+    max-width: 1100px;
+    margin: 0 auto 120px;
+    padding: 0 4vw;
+    .ceo-img {
+      width: 320px;
+      height: 216px;
+      top: -150px;
+    }
+    .ceo-content {
+      max-width: 494px;
+      padding: 109px 40px 48px;
+    }
+  }
+  /* company */
+  .company-wapper {
+    max-width: 1100px;
+    margin: 120px auto;
+    padding: 0 4vw;
+    .site-title {
+      border-bottom: 1px solid #DDDDDD;
+      padding-bottom: 30px;
+      margin-bottom: 0;
+    }
+    .company-item {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 0 40px auto;
+  
+      dt {
+        width: 25%;
+        padding: 20px 0;
+        border-bottom: 1px solid #DDDDDD;
+      }
+      dd {
+        width: 75%;
+        padding: 20px 10px 20px 20px;
+        border-bottom: 1px solid #DDDDDD;
+        font-weight: normal;
+      }
+    }
+  }
+  .map {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  iframe {
+    max-width: 1100px;
+    width: 100%;
+  }
+}
+
+/* SP版 */
+@media screen and (max-width:480px) {
+/* vision */
+.vision-wapper {
+  margin: 0 auto;
+  padding: 197px 4vw 100px;
+  }
+}
