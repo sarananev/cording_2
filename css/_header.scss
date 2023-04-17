@@ -34,7 +34,7 @@
   opacity: 0.9;
   transform: translateX(0);
   transition: all 0.5s;
-  z-index: 4;
+  z-index: 20;
 }
 
 .menu-img {
@@ -126,7 +126,7 @@
 #mask.active {
   opacity: 0.7;
   display: block;
-  z-index: 3;
+  z-index: 10;
 }
 
 /* header tablet */
@@ -135,7 +135,7 @@
     width: 189px;
     top: 10px;
     left: 10px;
-    img {
+    svg {
       width: 189px;
       height: 20.6px;
     }
@@ -143,10 +143,14 @@
   .menu {
     top: 20px;
     right: 30px;
-  }
-  
-  
-  
+  }  
+}
+
+@media screen and (max-width:480px) {
+  .menu {
+    top: 20px;
+    right: 15px;
+  }  
 }
 
 // header scroll

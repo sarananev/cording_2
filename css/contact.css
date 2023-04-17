@@ -34,7 +34,7 @@
   opacity: 0.9;
   transform: translateX(0);
   transition: all 0.5s;
-  z-index: 4;
+  z-index: 20;
 }
 
 .menu-img {
@@ -131,7 +131,7 @@
 #mask.active {
   opacity: 0.7;
   display: block;
-  z-index: 3;
+  z-index: 10;
 }
 
 /* header tablet */
@@ -141,13 +141,19 @@
     top: 10px;
     left: 10px;
   }
-  .logo img {
+  .logo svg {
     width: 189px;
     height: 20.6px;
   }
   .menu {
     top: 20px;
     right: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu {
+    top: 20px;
+    right: 15px;
   }
 }
 #header[fixed=true] {
@@ -259,7 +265,7 @@ li {
 
 .top-title {
   position: absolute;
-  top: 40%;
+  top: 50%;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -271,15 +277,14 @@ li {
 .top-title2 {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .sec-title {
   font-size: 7.2rem;
   font-weight: bold;
-  line-height: 0.87;
+  line-height: 1.1944444444;
   letter-spacing: 0.05em;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .sub-title {
@@ -335,6 +340,7 @@ li {
 .form-list .form-label {
   display: inline-block;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 .form-list .form-label span {
   width: 34px;
@@ -346,6 +352,9 @@ li {
   font-weight: bold;
   font-size: 1.2rem;
   margin-left: 10px;
+}
+.form-list .first {
+  margin-bottom: 20px;
 }
 .form-list .form-text {
   height: 41px;
@@ -408,6 +417,7 @@ input, textarea {
   margin: 0 auto 120px;
 }
 .button a {
+  display: block;
   line-height: 36px;
   cursor: pointer;
   color: #fff;
@@ -420,8 +430,16 @@ input, textarea {
 }
 
 @media screen and (max-width: 768px) {
+  /* topconsept */
+  .topconsept-wrapper {
+    width: 75.3%;
+  }
+  .cover-topconsept::after {
+    width: 73%;
+  }
   .top-title {
-    right: 15%;
+    top: 40%;
+    right: 10%;
   }
   .sec-title {
     font-size: 5.2rem;
@@ -448,10 +466,14 @@ input, textarea {
   }
   .contact-wrapper {
     margin: 0 auto;
-    padding: 120px 15px 0;
+    padding: 135px 15px 0;
   }
 }
 @media screen and (max-width: 485px) {
+  /* topconsept */
+  .cover-topconsept::after {
+    width: 75.4%;
+  }
   .top-title {
     top: 50%;
     right: 30%;
@@ -461,6 +483,8 @@ input, textarea {
   }
   .top-title2 {
     font-size: 1.6rem;
+    text-align: end;
+    padding-right: 10px;
   }
   .button {
     margin: 0 auto 80px;
