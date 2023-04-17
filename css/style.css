@@ -26,7 +26,6 @@
   height: 100vh;
   background-color: #222;
   transform: translateX(100%);
-  transition: all 0.5s;
   opacity: 0;
   padding: 120px 0 0;
 }
@@ -63,7 +62,6 @@
   top: 36px;
   right: 58px;
   z-index: 30;
-  transition: all 0.5s;
 }
 
 .menu-text {
@@ -83,6 +81,7 @@
   display: block;
   cursor: pointer;
   margin-right: 7px;
+  transition: all 0.3s;
 }
 .hamberger-menu span {
   width: 22px;
@@ -107,12 +106,14 @@
   transform: rotate(-135deg);
   top: 10px;
   background: #fff;
+  transition: all 0.3s;
 }
 
 .hamberger-menu.active span:nth-child(3) {
   transform: rotate(135deg);
   top: 10px;
   background: #fff;
+  transition: all 0.3s;
 }
 
 .hamberger-menu.active span:nth-child(2) {
