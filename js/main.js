@@ -3,7 +3,8 @@ const hamberger_menu = document.querySelector('.hamberger-menu');
 const Menu_text = document.querySelector('.menu');
 const mask = document.getElementById('mask');
 
-hamberger_menu.addEventListener('click', () => {
+// ハンバーガーメニューとMenuをクリックした時の実装
+hamberger_menu, Menu_text.addEventListener('click', () => {
   hamberger_menu.classList.toggle('active');
   navi.classList.toggle('active');
   mask.classList.toggle('active'); 
@@ -15,6 +16,7 @@ hamberger_menu.addEventListener('click', () => {
 mask.addEventListener('click', () => {
   hamberger_menu.classList.toggle('active');
   navi.classList.toggle('active');
+  mask.classList.toggle('active'); 
 });
 
 navi.addEventListener('click', () => {
@@ -22,6 +24,7 @@ navi.addEventListener('click', () => {
   navi.classList.toggle('active');
   mask.classList.toggle('active'); 
 })
+
 
 // radioボタンのチェックを外す
 let num = 0; // 最初は0に
