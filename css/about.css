@@ -331,6 +331,9 @@ li {
 }
 
 /* company */
+.company {
+  margin-bottom: 120px;
+}
 .company .site-title {
   border-bottom: 1px solid #DDDDDD;
   padding-bottom: 30px;
