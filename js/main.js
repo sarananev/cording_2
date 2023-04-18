@@ -14,15 +14,17 @@ hamberger_menu, Menu_text.addEventListener('click', () => {
 
 // maskエリアをクリックした時にメニューを閉じる
 mask.addEventListener('click', () => {
-  hamberger_menu.classList.toggle('active');
-  navi.classList.toggle('active');
-  mask.classList.toggle('active'); 
+  hamberger_menu.classList.remove('active');
+  navi.classList.remove('active');
+  mask.classList.remove('active'); 
+  Menu_text.classList.remove('active'); 
 });
 
 navi.addEventListener('click', () => {
   hamberger_menu.classList.toggle('active');
   navi.classList.toggle('active');
   mask.classList.toggle('active'); 
+  Menu_text.classList.toggle('active'); 
 })
 
 
