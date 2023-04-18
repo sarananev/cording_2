@@ -67,6 +67,7 @@
   font-size: 1rem;
   font-weight: bold;
   color: #fff;
+  cursor: pointer;
 }
 .menu.active .menu-text:nth-last-child(1) {
   color: #fff;
@@ -91,12 +92,15 @@
   }
   span:nth-child(1) {
     top: 5px;
+    transition: all 0.3s;
   }
   span:nth-child(2) {
     top: 10px;
+    transition: all 0.3s;
   }
   span:nth-child(3) {
     top: 15px;
+    transition: all 0.3s;
   }
 }
 
